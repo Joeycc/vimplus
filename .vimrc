@@ -264,6 +264,7 @@ let g:NERDTreeHighlightFolders = 1
 let g:NERDTreeHighlightFoldersFullName = 1 
 let g:NERDTreeDirArrowExpandable='▷'
 let g:NERDTreeDirArrowCollapsible='▼'
+let g:NERDTreeIgnore=['\.pyc','\.o','\.d','\.log']
 
 " YCM
 " 如果不指定python解释器路径，ycm会自己搜索一个合适的(与编译ycm时使用的python版本匹配)
@@ -327,7 +328,7 @@ let g:NERDTreeIndicatorMapCustom = {
 nnoremap <leader>f :LeaderfFile ~<cr>
 let g:Lf_WildIgnore = {
             \ 'dir': ['.svn','.git','.hg','.vscode','.wine','.deepinwine','.oh-my-zsh'],
-            \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+            \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]', '*.d']
             \}
 let g:Lf_UseCache = 0
 
